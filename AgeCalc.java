@@ -88,7 +88,7 @@ public static void main (String[] args){
 					continue;
 				}
 			}while((birthYear<0) || ((birthYear > date.getYear())||((birthYear == date.getYear())&&(birthMonth > currentMonth))||(((birthYear == date.getYear())&&(birthMonth > currentMonth))&&(birthDay > date.getDayOfMonth()))) || (((birthYear%4) != 0) && (birthDay > 28) && birthMonth == 2));
-			//Verifies if your birthday has occured this year and assigns a value. SEE NEXT COMMENT
+			//Verifies if your birthday has occurred this year and assigns a value. SEE NEXT COMMENT
 			if((birthMonth > currentMonth) ||((birthMonth == currentMonth)&&(birthDay > date.getDayOfMonth()))){
 				age = -1;
 			}
@@ -117,7 +117,8 @@ public static void main (String[] args){
 			}while((!(yesOrNo.equals("Y"))) && (!(yesOrNo.equals("N"))));
 		}while(again);
 	//}while(false);
-	
+		numScan.close();
+		strScan.close();
 	
 	}
 
